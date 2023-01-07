@@ -12,7 +12,7 @@ app.get('/', (request, response) => {
   }
 
   return response.status(400).json({
-    message: 'Provide "name" query param'
+    message: 'Required query param `name` is missing'
   })
   
 })
